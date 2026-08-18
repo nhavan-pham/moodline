@@ -28,4 +28,4 @@ Early planning stage — no application code yet. See [`PLAN.md`](./PLAN.md) for
 
 ## Planned stack
 
-Next.js (TypeScript) · Tailwind CSS · Postgres (Neon) · Prisma · custom username/password auth · Vercel + Vercel Cron for scheduled expiry cleanup.
+React + Vite (TypeScript) · Tailwind CSS · FastAPI (Python) · Postgres (Neon) · SQLModel + Alembic · custom username/password auth · Vercel (frontend) + Render/Railway (backend, DB, scheduled expiry cleanup).
