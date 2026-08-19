@@ -24,8 +24,29 @@ Most social apps reward long-form performance — the more you post, the more th
 
 ## Status
 
-Early planning stage — no application code yet. See [`PLAN.md`](./PLAN.md) for the full v1 architecture: tech stack, data model, API routes, and the milestone-by-milestone build order.
+Milestone 1 (project scaffold) in progress. See [`PLAN.md`](./PLAN.md) for the full v1 architecture: tech stack, data model, API routes, and the milestone-by-milestone build order.
 
-## Planned stack
+## Stack
 
 React + Vite (TypeScript) · Tailwind CSS · FastAPI (Python) · Postgres (Neon) · SQLModel + Alembic · custom username/password auth · Vercel (frontend) + Render/Railway (backend, DB, scheduled expiry cleanup).
+
+## Local development
+
+**Backend** (requires Python 3.11+):
+```
+cd backend
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+cp .env.example .env   # fill in DATABASE_URL once you have a Neon project
+.venv/bin/uvicorn app.main:app --reload --port 8000
+```
+
+**Frontend** (requires Node.js 20+):
+```
+cd frontend
+npm install
+cp .env.example .env
+npm run dev
+```
+
+The frontend expects the backend at `http://localhost:8000` by default (see `frontend/.env.example`).
