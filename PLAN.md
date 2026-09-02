@@ -1,4 +1,4 @@
-# Social Status App — v1 Implementation Plan
+# Moodline App — v1 Implementation Plan
 
 ## Context
 

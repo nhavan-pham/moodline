@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import FRONTEND_ORIGIN
 
-app = FastAPI(title="social-status API")
+app = FastAPI(title="Moodline API")
 
 app.add_middleware(
     CORSMiddleware,

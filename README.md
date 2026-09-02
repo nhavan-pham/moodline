@@ -1,4 +1,4 @@
-# social-status
+# Moodline
 
 A minimal social app for sharing how you're doing right now — nothing more.
 
